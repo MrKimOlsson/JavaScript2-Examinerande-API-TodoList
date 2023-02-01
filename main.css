@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:wght@200&display=swap");
+.form {
+  width: 100%;
+  padding: 2rem;
+}
+.form .input-field {
+  display: flex;
+  justify-content: center;
+}
+.form .input-field .textInput {
+  border-style: none;
+  border-radius: 1rem 0rem 0rem 1rem;
+  padding: 0.4rem 0.8rem;
+  width: 10rem;
+  background-color: rgb(19, 19, 19);
+  color: white;
+}
+.form .input-field .textInput:active {
+  border: none;
+}
+.form .input-field .btnSubmit {
+  border-style: none;
+  border-radius: 0rem 1rem 1rem 0rem;
+  padding: 0.4rem;
+  transition: all 300ms ease;
+}
+.form .input-field .btnSubmit:hover {
+  background-color: rgb(144, 157, 210);
+}
+.form .form-error {
+  color: red;
+  margin-top: 2rem;
+}
+.form .v-hidden {
+  visibility: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(37, 37, 61) 23%, rgb(39, 50, 92) 78%);
+}
+
+header {
+  color: #fff;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+}
+header .wrapper {
+  width: 100%;
+  padding-top: 2rem;
+  text-align: center;
+}
+header .wrapper h1 {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-size: 6rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.829);
+}
+header .wrapper h1 span {
+  transition: all 1s ease;
+}
+header .wrapper h1 span:hover {
+  padding: 1rem;
+}
+
+main {
+  background: linear-gradient(90deg, rgb(40, 41, 78) 23%, rgb(46, 59, 108) 78%);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  box-shadow: inset 1px 1px 3px #000;
+}
+
+footer {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.763);
+  position: absolute;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+}
+footer .pageControl {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+footer .pageControl .pageNumber {
+  color: white;
+}
+footer .pageControl .btnPrev, footer .pageControl .btnNext {
+  width: 4rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 1rem;
+  background-color: rgb(39, 50, 92);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 1px 2px 3px #000;
+  margin: 1rem;
+  transition: all 300ms ease;
+}
+footer .pageControl .btnPrev:hover, footer .pageControl .btnNext:hover {
+  background-color: rgb(49, 62, 115);
+}
+footer .pageControl .btnPrev:active, footer .pageControl .btnNext:active {
+  box-shadow: 1px 1px 3px #000;
+}
+
+.todo-wrapper {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: auto;
+}
+.todo-wrapper .completedTodo {
+  background-color: rgba(5, 73, 73, 0.384);
+}
+.todo-wrapper .completedTodo p {
+  text-decoration: line-through;
+  opacity: 20%;
+}
+
+.todo {
+  width: 70vw;
+  background: rgb(74, 70, 78);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 78%);
+  border-radius: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.733);
+  color: #fff;
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 4rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms ease;
+}
+.todo:hover {
+  font-size: 1.2rem;
+  text-shadow: 1px 4px 2px rgb(0, 0, 0);
+}
+.todo .buttonDiv {
+  display: flex;
+  align-items: center;
+}
+.todo .buttonDiv button {
+  margin: 0.5rem;
+}
+.todo p {
+  margin-left: 1rem;
+}
+
+.statusButton {
+  background-color: rgb(37, 46, 61);
+  border-radius: 50%;
+  border-style: none;
+  width: 30px;
+  height: 30px;
+  box-shadow: inset 2px 3px 3px #000;
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  transition: all 500ms ease;
+}
+.statusButton:hover {
+  background-color: rgb(54, 69, 95);
+}
+
+.deleteButton {
+  background-color: rgb(134, 0, 0);
+  color: white;
+  font-size: 1.4rem;
+  box-shadow: 2px 4px 6px #000;
+  border-style: none;
+  border: 3px solid rgb(102, 0, 0);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: all 300ms ease;
+}
+.deleteButton:hover {
+  background-color: rgb(192, 0, 0);
+  border: 3px solid rgb(134, 0, 0);
+  transform: rotate(-45deg);
+}
+.deleteButton:active {
+  box-shadow: 1px 1px 3px #000;
+  transform: rotate(90deg);
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-wrapper .modal {
+  background-color: rgb(192, 190, 211);
+  border: 1px solid rgb(214, 212, 235);
+  width: 20rem;
+  height: 10rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 4px 1px #000;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.modal-wrapper .modal p {
+  margin-bottom: 2rem;
+}
+.modal-wrapper .modal .btnCloseModal {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border-style: none;
+  border: 3px solid rgb(148, 9, 9);
+  background-color: firebrick;
+  box-shadow: 1px 2px 3px #000;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0.5em;
+  left: 8em;
+}
+.modal-wrapper .modal .btnCloseModal:hover {
+  border: 3px solid rgb(177, 7, 7);
+  background-color: rgb(209, 24, 24);
+}
+.modal-wrapper .modal .btnCloseModal:active {
+  box-shadow: 1px 1px 2px #000;
+}
+
+.d-none {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

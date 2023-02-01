@@ -1,0 +1,43 @@
+// Backgrounds
+$body-bg: rgb(42, 0, 87);
+$form-bg: rgb(73, 46, 101);
+$card-bg: rgb(183, 162, 206);
+
+// Header
+$header-bg: rgb(60, 2, 123);
+$header-text: #fff;
+
+// Todo
+$todoList: #fff;
+$todo: #fff;
+
+// Completed / not completed
+$completed: red;
+$notCompleted: green;
+
+// Buttons
+$changeButton: darkgray;
+$changeButton-text: black;
+$deleteButton:red;
+$deleteButton-text: rgb(0, 0, 0);
+$formButton: darkgray;
+$formButton-text: black;
+
+// Hover and active
+$formButton-hover: rgb(60, 2, 123);
+$formButton-active: rgb(42, 0, 87);
+$button-shadow-hover: 2px 2px 3px rgba(0, 0, 0, 0.5);
+$button-shadow-active: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+// Form error
+$form-error: red;
+
+// Shadows
+$box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+$inset-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.507);
+
+$border-light-dark: rgba(0, 0, 0, 0.635);
+
+// Status done
+$btn-status-done: rgb(109, 109, 109);
+$todo-status-done: rgb(109, 109, 109);

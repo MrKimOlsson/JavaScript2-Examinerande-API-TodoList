@@ -1,0 +1,101 @@
+@import "colors";
+
+.todo-wrapper {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+
+    .completedTodo{
+        background-color: rgba(5, 73, 73, 0.384);
+
+        p{
+            text-decoration: line-through;
+            opacity: 20%;
+        }
+    }
+}
+
+.todo{
+    width: 70vw;
+    background: rgb(74,70,78);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 78%);
+    border-radius: 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.055);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.733);
+    color: #fff;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 4rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 300ms ease;
+    
+    &:hover{
+        // padding-top: 2rem;
+        // padding-bottom: 2rem;
+        font-size: 1.2rem;
+        // transform: rotate(.3deg);
+        text-shadow: 1px 4px 2px rgb(0, 0, 0);
+    }
+
+    .buttonDiv{
+        display: flex;
+        align-items: center;
+
+        button{
+            margin: .5rem;
+        }
+    }
+
+    p {
+        margin-left: 1rem;
+    }
+}
+
+.statusButton {
+    background-color: rgb(37, 46, 61);
+    border-radius: 50%;
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    box-shadow: inset 2px 3px 3px #000;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    transition: all 500ms ease;
+    
+    &:hover {
+        background-color: rgb(54, 69, 95);
+    }
+}
+
+// Delete button
+.deleteButton {
+    background-color: rgb(134, 0, 0);
+    color: white;
+    font-size: 1.4rem;
+    box-shadow: 2px 4px 6px #000;
+    border-style: none;
+    border: 3px solid rgb(102, 0, 0);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all 300ms ease;
+    
+    &:hover {
+        background-color: rgb(192, 0, 0);
+        border: 3px solid rgb(134, 0, 0);
+        transform: rotate(-45deg);
+    }
+
+    &:active {
+        box-shadow: 1px 1px 3px #000;
+        transform: rotate(90deg);
+    }
+}

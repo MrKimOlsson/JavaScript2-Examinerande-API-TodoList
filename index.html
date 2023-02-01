@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="main.css">
+    <title>Examinerande inlämningsuppift</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1><span>Just</span><span> do</span><span> it!</span></h1>
+            <form class="form" id="form">
+                <div class="input-field">
+                    <input class="textInput" type="text" name="textInput" placeholder="Add a task." rows="5">
+                    <button class="btnSubmit">I got this!</button>
+                </div>
+                <p class="form-error v-hidden">Add something to do, to do a todo.</p>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="todo-wrapper">
+            <div class="output" id="output"></div>
+        </div>
+        <div class="modal-wrapper d-none">
+            <div class="modal">
+                <button class="btnCloseModal">&times;</button>
+                <p>You have to complete the task<br>before you can delete it.</p>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="pageControl">
+            <button class="btnPrev">Prev</button>
+            <p class="pageNumber" id="pageNumber">Page 1</p>
+            <button class="btnNext">Next</button>
+        </div>
+    </footer>
+    <script src="/script/script.js"></script>
+    <script src="/script/get.js"></script>
+    <script src="/script/elements.js"></script>
+    <script src="/script/submit.js"></script>
+    <script src="/script/patch.js"></script>
+    <script src="/script/delete.js"></script>
+    <script src="/script/pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+// _________________________________________________________MODAL______________________________________________________
+.modal-wrapper{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal{
+        background-color: rgb(192, 190, 211);
+        border: 1px solid rgb(214, 212, 235);
+        width: 20rem;
+        height: 10rem;
+        border-radius: 2rem;
+        box-shadow: 2px 2px 4px 1px #000;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        p{
+            margin-bottom: 2rem;
+        }
+
+        .btnCloseModal{
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            border-style: none;
+            border: 3px solid rgb(148, 9, 9);
+            background-color: firebrick;
+            box-shadow: 1px 2px 3px #000;
+            color: white;
+            font-size: 1rem;
+            position: relative;
+            bottom: .5em;
+            left: 8em;
+            
+            &:hover {
+                border: 3px solid rgb(177, 7, 7);
+                background-color: rgb(209, 24, 24);
+            }
+
+            &:active {
+
+                box-shadow: 1px 1px 2px #000;
+            }
+        }
+    }
+}
+
+.d-none {
+    display: none;
+}
