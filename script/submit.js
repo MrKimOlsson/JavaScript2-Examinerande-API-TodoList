@@ -4,12 +4,38 @@ const form = document.querySelector('#form');
 const handleSubmit = e => {
   e.preventDefault()
 
-  // Felhantering - Om input är tom
-  if(textInput.value == ""){
+  input = textInput.value
+
+  // Some overkill validation for this project, but why not.
+    checkForSpace(input);
+
+    function checkForSpace(args) {
+      
+        // Trim the string
+        const trimmedString = args.trim().length;    
+        return trueOrFalse(trimmedString)        
+    }
+    
+    // Extra check with regex for browser support issues with first function
+    doubbleCheck(input);
+    
+
+    function doubbleCheck(args) {
+        const trimmedString = args.replace(/^\s+|\s+$/gm, '').length;   
+        return trueOrFalse(trimmedString)
+    }
+    
+    function trueOrFalse(args) {
+        return args > 0 ? true : false;
+    }
+
+  // textInput.value is empty & (just in case) If function checks return as false
+  if(textInput.value.trim() == "" && !checkForSpace(input)){
+
     console.log("Text input empty - return error");
     formError.classList.remove('v-hidden');
-
   }
+
   else {
     formError.classList.add('v-hidden');
 
@@ -19,7 +45,6 @@ const handleSubmit = e => {
     }
       
     try {
-    
       fetch(BASE_URL, {
         method: 'POST',
         body: JSON.stringify(newTodo),

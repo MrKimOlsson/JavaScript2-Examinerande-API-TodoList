@@ -42,6 +42,7 @@ const createTodoElement = (todoData) => {
     let statusButton = document.createElement('button');
     statusButton.classList.add('statusButton');
     statusButton.classList.add('button');
+    statusButton.setAttribute('title', 'button toggle done');
     statusButton.innerText = "";
     buttonDiv.appendChild(statusButton)
 
@@ -69,6 +70,7 @@ const createTodoElement = (todoData) => {
     let deleteButton = document.createElement('button');
     deleteButton.classList.add('deleteButton');
     deleteButton.classList.add('button');
+    deleteButton.setAttribute('title', 'button delete todo');
     deleteButton.innerHTML = "&times;";
     buttonDiv.appendChild(deleteButton);
 

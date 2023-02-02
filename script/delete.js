@@ -9,7 +9,7 @@ const removeTodo = e => {
     modalWrapper.classList.remove('d-none');
     document.querySelector('footer').classList.add('blur')
     btnCloseModal.addEventListener('click', e => {
-      modalWrapper.classList.add('d-none');
+    modalWrapper.classList.add('d-none');
       
     })
     return
