@@ -5,7 +5,6 @@ const removeTodo = e => {
   todo = e;
 
   if(todo.completed == false){
-    console.log("Complete the task first")
     modalWrapper.classList.remove('d-none');
     document.querySelector('footer').classList.add('blur')
     btnCloseModal.addEventListener('click', e => {
@@ -26,11 +25,11 @@ const removeTodo = e => {
       findIndex = todo.id
       const index = todos.findIndex(todo => todo.id == findIndex)
       todos.splice(index, 1)
-      console.log(todos)
+      console.log(res)
       listTodos();
     }
     else{
-      console.log("Nått gick snett")
+      console.log("Response not ok")
     }
   })
 }

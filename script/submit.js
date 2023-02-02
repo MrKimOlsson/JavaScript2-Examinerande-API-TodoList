@@ -53,9 +53,8 @@ const handleSubmit = e => {
         },
       })
       
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => {
-        console.log("Response data:")
         console.log(data)
         data.id = crypto.randomUUID();
         todos.push(data)

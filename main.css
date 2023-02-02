@@ -215,6 +215,7 @@ footer .pageControl .btnPrev:active, footer .pageControl .btnNext:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 .modal-wrapper .modal {
   background-color: rgb(192, 190, 211);

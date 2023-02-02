@@ -27,10 +27,7 @@ const changeStatus = e => {
 
         .then(res => res.json())
         .then(data => {
-            console.log("Response data:")
             console.log(data)
-            console.log("data completed = ")
-            console.log(data.completed)
             todoData.completed = data.completed
             listTodos();
         }) 
